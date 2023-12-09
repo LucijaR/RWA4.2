@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+
+function funkcija()
+{
+  x=parseInt(document.getElementById("prvi").value);
+  y=parseInt(document.getElementById("drugi").value);
+  var rez = x + y;
+  document.getElementById("treci").value=rez;
+  
+}
+
+ </script>
+ 
+ X = <input type="text" id="prvi"/> <br>
+ Y = <input type="text" id="drugi"/> <br><br>
+ <input type="button" value="Zbroji" onclick="funkcija()"/>
+ <hr/>
+ REZULTAT = <input type="text" id="treci"/>
+ 
+ 
+ 
+</body>
+</html>

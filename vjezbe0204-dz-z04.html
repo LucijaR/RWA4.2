@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+
+function funkcija()
+ {
+ 
+ broj= document.getElementById("ocjena").value;
+ if(broj==1)
+ {
+   document.getElementById("ocjena2").innerHTML="1-nedovoljan";
+ }
+ 
+ if(broj==2)
+ {
+   document.getElementById("ocjena2").innerHTML="2-dovoljan";
+ }
+ 
+ if(broj==3)
+ {
+  document.getElementById("ocjena2").innerHTML="3-dobar";
+ }
+ 
+ if(broj==4)
+ {
+   document.getElementById("ocjena2").innerHTML="4-vrlo dobar";
+  }
+   
+   if(broj==5)
+ {
+   document.getElementById("ocjena2").innerHTML="5-odlican";
+ }
+}
+
+ </script>
+ 
+<input type="text" id="ocjena" />
+<input type="button" value="Submit" onclick="funkcija()"/>
+
+<p id="ocjena2">  </p>
+ 
+</body>
+</html>

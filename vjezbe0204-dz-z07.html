@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+
+function funkcija()
+{
+   const d= new Date
+   x = document.getElementById("godina").value;
+   y = document.getElementById("mjesec").value;
+   z = document.getElementById("dan").value;
+   if( y==12 && z>9 )
+      alert(d.getFullYear()-x-1)
+	else 
+	  alert(d.getFullYear()-x);
+}
+
+ </script>
+ 
+ Unesite dan (1 - 31): <input type="text" id="dan"/> <br>
+ Unesite mjesec (1 - 12): <input type="text" id="mjesec"/> <br>
+ Unesite godinu (npr. 1970): <input type="text" id="godina"/> <br>
+ <input type="button" value="Izracunaj" onclick="funkcija()"/>
+ 
+</body>
+</html>

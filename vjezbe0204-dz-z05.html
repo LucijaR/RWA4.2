@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+
+ function provjera()
+ {
+   oznaka= document.getElementById("tablice").value;
+   if( (oznaka.length === 9) &&
+        ('AEJKMOT'.indexOf(oznaka[0]) !== -1) &&
+        ('0123456789'.indexOf(oznaka[1]) !== -1) &&
+        ('0123456789'.indexOf(oznaka[2]) !== -1) &&
+        (oznaka[3] === '-') &&
+        ('AEJKMOT'.indexOf(oznaka[4]) !== -1) &&
+		(oznaka[5] === '-') &&
+        ('0123456789'.indexOf(oznaka[6]) !== -1) &&
+        ('0123456789'.indexOf(oznaka[7]) !== -1) &&
+        ('0123456789'.indexOf(oznaka[8]) !== -1))
+     {
+	  alert("Ispravan format registarske oznake.");
+	  }
+	else 
+	{
+        alert("Neispravan format registarske oznake.");
+    }
+}
+
+
+
+ </script>
+ 
+ <input type="text" id="tablice"/>
+ <input type="button" value="Submit" onclick="provjera()"/>
+ 
+</body>
+</html>

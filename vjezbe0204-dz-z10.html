@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+function funkcija()
+{
+var element = document.createElement("p");
+var tekst = document.createTextNode("Novi tekst");
+element.appendChild(tekst);
+stari = document.getElementById("defaultni");
+stari.appendChild(element);
+}
+
+</script>
+</head>
+
+<body>
+
+<p> <a href="#" onclick="funkcija()"> Kliknite ovdje da dodate novi paragraf tekst </a></p>
+<p> Novi paragrafi teksta će se pojaviti ispod </p>
+<p id="defaultni"> Ovo je defaultni prvi paragraf teksta </p>
+
+</body>
+</html>
+

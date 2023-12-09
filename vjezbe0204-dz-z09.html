@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+ 
+zarulja=false ;
+
+function promijeni()
+{
+zarulja = !zarulja;
+
+  if (zarulja) 
+  {
+    document.getElementById("slika1").src = "on-removebg-preview.png";
+    document.getElementById("slika2").src = "zarulja_on_2.png";
+  } 
+  else 
+  {
+    document.getElementById("slika1").src = "off-removebg-preview.png";
+    document.getElementById("slika2").src = "zarulja_off_2.png";
+  }
+}
+
+
+ </script>
+ 
+ <img src="off-removebg-preview.png" id="slika1" onclick="promijeni()"/>
+ <img src="zarulja_off_2.png" id="slika2" />
+ 
+</body>
+</html>

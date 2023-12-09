@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+
+
+function zbroji()
+{
+  x= parseInt(document.getElementById("op1").value);
+  y= parseInt(document.getElementById("op2").value);
+  alert(x + y);
+}
+
+function oduzmi()
+{
+  x= parseInt(document.getElementById("op1").value);
+  y= parseInt(document.getElementById("op2").value);
+  alert(x-y);
+}
+
+function mnozi()
+{
+  x= parseInt(document.getElementById("op1").value);
+  y= parseInt(document.getElementById("op2").value);
+  alert(x*y);
+}
+
+function dijeli()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(x/y);
+}
+
+function sinus()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.sin(x));
+}
+
+function kosinus()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.cos(x));
+}
+
+function tangens()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.tan(x));
+}
+
+function pr_log()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.log(x));
+}
+
+function logaritam()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.log10(x));
+}
+
+function kvadrat()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.pow(x,2));
+}
+
+function kub()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.pow(x,3));
+}
+
+function na_n()
+{
+  x= parseFloat(document.getElementById("op1").value);
+  y= parseFloat(document.getElementById("op2").value);
+  alert(Math.pow(x,y));
+}
+
+
+ </script>
+ 
+<input type="text" id="op1"/> operand 1 <br><br>
+<input type="text" id="op2"/> operand 2 <br><br>
+
+<input type="button" value="+" onclick="zbroji()"/>  
+<input type="button" value="-" onclick="oduzmi()"/>  
+<input type="button" value="*" onclick="mnozi()"/>  
+<input type="button" value="/" onclick="dijeli()"/>  <br><br>
+<input type="button" value="sin" onclick="sinus()"/>  
+<input type="button" value="cos" onclick="kosinus()"/>  
+<input type="button" value="tan" onclick="tangens()"/>  <br><br>
+<input type="button" value="ln" onclick="pr_log()"/> 
+<input type="button" value="log" onclick="logaritam()"/>  <br><br>
+<input type="button" value="^2" onclick="kvadrat()"/> 
+<input type="button" value="^3" onclick="kub()"/> 
+<input type="button" value="^n" onclick="na_n()"/> 
+
+ 
+</body>
+</html>
